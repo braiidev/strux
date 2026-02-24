@@ -1,4 +1,4 @@
-import { mount, signal, ui } from './core/index.js';
+import { mount, signal, ui } from '../core/index.js';
 
 const strux = document.getElementById('strux');
 
