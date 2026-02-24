@@ -68,7 +68,7 @@ async function loadGuide() {
   onCleanup(() => controller.abort());
 
   try {
-    const res = await fetch('./core/GUIDE.md', { signal: controller.signal });
+    const res = await fetch('../README.md', { signal: controller.signal });
     if (!res.ok) throw new Error('Cannot load GUIDE.md');
     guideMarkdown.value = await res.text();
   } catch {
